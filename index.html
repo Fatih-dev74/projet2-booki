@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -25,10 +24,10 @@
     <div class="main-container">
         <header>
             <nav aria-label="Menu de navigation" class="header-navbar">
-                <div class="header-logo">
-                    <a title="Retour à la page d'accueil" href="#"><img src="./images/logo/Booki.png" width="191"
-                            height="60" alt="Booki Logo"></a>
-                </div>
+                <h1 class="header-logo">
+                    <a title="Retour à la page d'accueil" href="#"><img src="./images/logo/Booki.png" alt="Booki Logo"></a>
+                    <span hidden>Booki</span>
+                </h1>
                 <div class="header-nav">
                     <div class="header-nav-item">
                         <div class="header-nav-item-text">
@@ -44,29 +43,17 @@
             </nav>
             <div class="header-main-section">
                 <div class="header-main-text">
-                    <article>
-                        <div class="header-title">
-                            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                        </div>
-                        <div class="header-subline">
-                            <p>En plein centre-ville ou en pleine nature</p>
-                        </div>
-                    </article>
+                            <span class="lead">Trouvez votre hébergement pour des vacances de rêve</span><br>En plein centre-ville ou en pleine nature
                 </div>
-                <div class="header-searchbar">
-                    <div class="header-searchbar-pin">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <form class="header-searchbar-city" aria-label="Recherche de ville">
-                        <input type="text" value="Marseille, France" id="city">
-                    </form>
-                    <div class="header-searchbar-search">
-                        <a title="Rechercher" href="#" aria-label="Lancer la recherche">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass fa-seventeen"></i>
-                            <h2>Rechercher</h2>
-                        </a>
-                    </div>
-                </div>
+
+                <form class="header-searchbar">
+                    <div class="header-searchbar-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <input class="header-searchbar" type="search" placeholder="Marseille, France" name="q">
+                    <button type="submit" class="header-searchbar-submit" aria-label="Lancer la recherche">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-seventeen"></i><span>Rechercher</span>
+                    </button>
+                </form>
+
                 <div class="header-filters">
                     <div class="header-filters-title">
                         <h2>Filtres</h2>
