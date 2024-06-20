@@ -33,20 +33,6 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 1024px) {
-    .main-container {
-        max-width: 100%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-container {
-        padding: 0;
-        margin: 0;
-    }
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -534,9 +520,16 @@ a {
 
 /*************************** VERSION TABLETTE ***************************/
 
-/* Document Header - Nav bar - Tablette */
+/* Document Main container - Tablette */
 
 @media (max-width: 1024px) {
+    .main-container {
+        max-width: 100%;
+        height: 100%;
+    }
+
+/* Document Header - Nav bar - Tablette */
+
     .header-navbar {
         margin-bottom: 30px;
     }
@@ -636,9 +629,16 @@ a {
 
 /*************************** VERSION MOBILE ***************************/
 
-/* Document Header - Nav bar - Mobile */
+/* Document Main container - Mobile */
 
 @media (max-width: 768px) {
+    .main-container {
+        padding: 0;
+        margin: 0;
+    }
+
+/* Document Header - Nav bar - Mobile */
+
     .header-navbar {
         height: 115px;
         display: grid;
